@@ -3,23 +3,23 @@
     <v-card height="50px">
       <v-bottom-nav :active.sync="bottomNav" :color="color" :value="true" absolute dark shift>
         <v-btn dark to="/">
-          <span>Video</span>
-          <v-icon>ondemand_video</v-icon>
+          <span>Shop</span>
+          <i aria-hidden="true" class="v-icon theme--dark fas fa-store"></i>
         </v-btn>
 
         <v-btn dark to="/Barracks">
-          <span>Music</span>
-          <v-icon>music_note</v-icon>
+          <span>Production</span>
+          <i aria-hidden="true" class="v-icon theme--dark fab fa-earlybirds"></i>
         </v-btn>
 
         <v-btn dark>
-          <span>Book</span>
-          <v-icon>book</v-icon>
+          <span>Barracks</span>
+          <i aria-hidden="true" class="v-icon theme--dark fas fa-paw"></i>
         </v-btn>
 
         <v-btn dark>
-          <span>Image</span>
-          <v-icon>image</v-icon>
+          <span>Battle</span>
+          <i aria-hidden="true" class="v-icon theme--dark fas fa-bolt"></i>
         </v-btn>
       </v-bottom-nav>
     </v-card>
