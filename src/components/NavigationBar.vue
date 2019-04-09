@@ -133,3 +133,8 @@ export default {
   }
 };
 </script>
+<style scoped>
+.container {
+  padding: 10px;
+}
+</style>
