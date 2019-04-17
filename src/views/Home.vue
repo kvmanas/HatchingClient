@@ -2,12 +2,14 @@
   <div>
     <PageHeader/>
     <MainComponent/>
+    <LoginModel/>
   </div>
 </template>
 
 <script>
 import MainComponent from "@/components/MainComponent";
 import PageHeader from "@/components/PageHeader.vue";
+import LoginModel from "@/components/Login.vue";
 // @ is an alias to /src
 //import HelloWorld from "@/components/HelloWorld.vue";
 
@@ -15,7 +17,8 @@ export default {
   name: "Home",
   components: {
     MainComponent,
-    PageHeader
+    PageHeader,
+    LoginModel
   },
   created() {
     document.title = "Look ok!";
