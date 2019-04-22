@@ -1,5 +1,6 @@
 <template>
-  <div class="page-header header-filter">
+<div>
+  <div class="page-header header-filter" :style="style">
     <div class="squares square1"></div>
     <div class="squares square2"></div>
     <div class="squares square3"></div>
@@ -14,9 +15,28 @@
       </div>
     </div>
   </div>
+  </div>
 </template>
 <script>
 export default {
-  name: "PageHeader"
+  name: "PageHeader",
+  props: {
+    fullscreen: Boolean
+  },
+  computed: {
+      style () {
+        if(this.fullscreen){
+          return (`
+            height: 100vh;
+            min-height: 100vh;
+          `)
+        }else{
+          return (`
+            height: 40vh;
+            min-height: 40vh;
+          `)
+        }
+      }
+    },
 };
 </script>

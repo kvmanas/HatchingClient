@@ -2,16 +2,7 @@
   <nav class="navbar navbar-expand-lg fixed-top navbar-transparent" color-on-scroll="100">
     <div class="container">
       <div class="navbar-translate">
-        <a
-          class="navbar-brand"
-          href="https://demos.creative-tim.com/blk-design-system/index.html"
-          rel="tooltip"
-          title="Designed and Coded by Creative Tim"
-          data-placement="bottom"
-          target="_blank"
-        >
-          <span>BLK•</span> Design System
-        </a>
+        <router-link class="navbar-brand" to="/"><span>Crypto•</span> Hatching</router-link>
         <button
           class="navbar-toggler navbar-toggler"
           type="button"
@@ -54,18 +45,13 @@
             </button>
           </li>
           <li class="nav-item p-0">
-            <button class="nav-link" data-toggle="modal" data-target="#loginmodel">
+            <button class="nav-link" data-toggle="modal" data-target="#registermodel">
               <i class="fas fa-user-plus"></i>Register
             </button>
           </li>
           <li class="nav-item p-0">
-            <a
-              class="nav-link"
-              href="https://www.instagram.com/CreativeTimOfficial"
-              target="_blank"
-            >
-              <i class="fas fa-users-cog"></i>Admins
-            </a>
+            <router-link class="nav-link" to="/Admin"><i class="fas fa-users-cog"></i>Admins</router-link>
+          
           </li>
         </ul>
       </div>
